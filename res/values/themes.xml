@@ -16,9 +16,11 @@
   -->
 
 <resources>
-    <style name="Theme.Settings" parent="@android:style/Theme.DeviceDefault.Settings"/>
-
-    <style name="Theme.Settings.NoActionBar">
+    <style name="Theme.Settings" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="android:textColorHint">@color/black_54</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Theme.Settings.NoActionBar" parent="@style/Theme.Settings">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
